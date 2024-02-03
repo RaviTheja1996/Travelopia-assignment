@@ -29,4 +29,4 @@ This is a full-page component built for a specific problem statement which conta
 
 ## Deployment
 
-live site : [link](https://visionary-dodol-8a0a80.netlify.app/)
+live site : [link](https://travelopia-assignment-eight.vercel.app/)
