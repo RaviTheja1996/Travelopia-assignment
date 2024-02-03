@@ -26,3 +26,7 @@ This is a full-page component built for a specific problem statement which conta
 ![Screenshot 4](./screenshots/Screenshot-04.png)
 ![Screenshot 2](./screenshots/Screenshot-02.png)
 ![Screenshot 3](./screenshots/Screenshot-03.png)
+
+## Deployment
+
+live site : ![link](https://visionary-dodol-8a0a80.netlify.app/)
