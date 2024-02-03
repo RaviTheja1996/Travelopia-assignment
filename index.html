@@ -37,13 +37,7 @@
                 alt="man standing on a hill top against the sunrise">
             <div class="title-block">
                 <h1>Adventure Travel</h1>
-                <button type="button" class="action-btn" id="show-custom-alert">Click here</button>
-            </div>
-            <div id="custom-alert" class="custom-alert">
-                <div class="custom-alert-content">
-                    <p id="custom-alert-message"></p>
-                    <button id="custom-alert-btn">Okay</button>
-                </div>
+                <button type="button" class="action-btn">Click here</button>
             </div>
         </section>
     </main>
@@ -63,40 +57,10 @@
         &copy; Copyrights ABC 2024.
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Function to show the custom alert
-            function showAlert(message, callback) {
-                // Block interactions
-                document.body.style.overflow = 'hidden';
-
-                // Set the message
-                document.getElementById('custom-alert-message').innerText = message;
-
-                // Show the custom alert
-                document.getElementById('custom-alert').style.display = 'flex';
-
-                // Handle the Okay button click
-                document.getElementById('custom-alert-btn').addEventListener('click', function () {
-                    // Hide the custom alert
-                    document.getElementById('custom-alert').style.display = 'none';
-
-                    // Unblock interactions
-                    document.body.style.overflow = 'auto';
-
-                    // Execute callback function if provided
-                    if (callback && typeof callback === 'function') {
-                        callback();
-                    }
-                });
-            }
-
-            // Example usage
-            document.getElementById('show-custom-alert').addEventListener('click', function () {
-                showAlert('Hello, World', function () {
-                    console.log('Okay button clicked!');
-                });
-            });
-        });
+        let btn = document.querySelector(".action-btn");
+        btn.addEventListener("click", () => {
+            alert("Hello, World");
+        })
     </script>
 </body>
 
