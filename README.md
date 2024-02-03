@@ -19,3 +19,10 @@ This is a full-page component built for a specific problem statement which conta
 5. For optimizing the image to different screen sizes I have used the css of display as "block" and max-width as "100%" and left the height to default value of auto.
 6. For the overlay implementation I have used the pseudo-element "::after" and applied opacity to the image.
 7. For implementing the alert functionality of the button I have used the "alert()" method from javascript to display an alert of "Hello, World."
+
+## screenshots
+
+![Screenshot 1](./screenshots/Screenshot-01.png)
+![Screenshot 1](./screenshots/Screenshot-02.png)
+![Screenshot 1](./screenshots/Screenshot-03.png)
+![Screenshot 1](./screenshots/Screenshot-04.png)
