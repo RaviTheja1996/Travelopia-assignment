@@ -23,5 +23,6 @@ This is a full-page component built for a specific problem statement which conta
 ## screenshots
 
 ![Screenshot 1](./screenshots/Screenshot-01.png)
+![Screenshot 4](./screenshots/Screenshot-04.png)
 ![Screenshot 2](./screenshots/Screenshot-02.png)
 ![Screenshot 3](./screenshots/Screenshot-03.png)
