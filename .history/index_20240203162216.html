@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body,
+        html {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            list-style: none;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        header,
+        footer {
+            min-height: 10vh;
+            font-size: 115%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(190, 249, 243);
+            z-index: 5;
+        }
+
+        footer {
+            text-align: center;
+            bottom: 0;
+            /* position: absolute;
+            width: 100%; */
+        }
+
+        header {
+            top: 0;
+            /* position: absolute;
+            width: 100%; */
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        #hero {
+            position: relative;
+            z-index: 0;
+            height: 70vh;
+        }
+
+        #hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            /* Adjust the alpha value (0.5 for 50% opacity) */
+            z-index: 1;
+        }
+
+        .hero-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .action-btn {
+            z-index: 2;
+            position: absolute;
+            top: 60%;
+            left: 45%;
+            min-width: 8rem;
+            min-height: 3rem;
+            font-size: 1.5rem;
+        }
+
+        .title-block {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: white;
+        }
+
+        .title-block>button {
+            margin-top: 3rem;
+            transform: translateY(25%);
+            left: 20%;
+            right: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar-main" aria-label="primary-navbar">
+            <ul class="flex">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="hero">
+            <img class="hero-image" src="backpacker-standing-sunrise.jpg"
+                alt="man standing on a hill top against the sunrise">
+            <div class="title-block">
+                <h1>Adventure Travel</h1>
+                <button type="button" class="action-btn">Click here</button>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <ul class="footer-social-links flex">
+            <li>
+                <a href="#">Instagram</a>
+            </li>
+            <li>
+                <a href="#">Twitter</a>
+            </li>
+            <li>
+                <a href="#">Facebook</a>
+            </li>
+        </ul>
+        &copy; Copyrights ABC 2024.
+    </footer>
+    <script>
+        let btn = document.querySelector(".action-btn");
+        btn.addEventListener("click", () => {
+            alert("Hello, World");
+        })
+    </script>
+</body>
+
+</html>
