@@ -1,10 +1,11 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body,
 html {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +13,7 @@ html {
 
 .flex {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     justify-content: center;
     list-style: none;
 }
@@ -24,7 +25,8 @@ ul {
 header,
 footer {
     min-height: 100px;
-    font-size: 115%;
+    max-height: 100px;
+    font-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,10 +92,4 @@ a {
     transform: translateY(25%);
     left: 20%;
     right: 30%;
-}
-
-@media only screen and (min-width: 400px) and (max-width: 1500px) {
-    #hero {
-        height: 78vh;
-    }
 }
