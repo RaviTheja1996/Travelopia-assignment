@@ -32,6 +32,7 @@ footer {
     justify-content: center;
     background-color: rgb(190, 249, 243);
     z-index: 5;
+    /* display: none; */
 }
 
 footer {
@@ -52,7 +53,8 @@ a {
 #hero {
     position: relative;
     z-index: 0;
-    height: 68vh;
+    /* height: 68vh; */
+    height: calc(100vh - 200px);
 }
 
 #hero::before {
@@ -95,6 +97,7 @@ a {
     right: 30%;
 }
 
+/*
 @media only screen and (min-width: 1200px) {
     footer {
         margin-top: -3px;
@@ -172,3 +175,4 @@ a {
         height: 66.5vh;
     }
 }
+*/
